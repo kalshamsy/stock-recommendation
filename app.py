@@ -23,6 +23,7 @@ from src.evaluation_ui import (
 from src.i18n import t
 from src.indicators import compute_indicators
 from src.models import AnalysisResult
+from src.universe_ui import render_universe_report
 from src.ui import (
     build_price_chart,
     inject_styles,
@@ -48,7 +49,7 @@ st.set_page_config(
     menu_items={
         "Get help": None,
         "Report a bug": None,
-        "About": "Stock Decision Pro V1.1 — analysis and point-in-time evaluation.",
+        "About": "Stock Decision Pro V1.2 — analysis, single-stock evaluation, and fixed-universe portfolio testing.",
     },
 )
 
@@ -166,7 +167,7 @@ def record_recommendation(result: AnalysisResult) -> None:
         "stop_loss": round(result.stop_loss, 4) if result.stop_loss is not None else None,
         "target_1": round(result.target_1, 4) if result.target_1 is not None else None,
         "target_pct": result.target_pct,
-        "engine_version": "1.1.0",
+        "engine_version": "1.2.0",
     }
     records = st.session_state.get("recommendation_log", [])
     identity = (record["symbol"], record["mode"], record["as_of"], record["target_pct"])
@@ -264,6 +265,23 @@ def render_analysis_workspace(lang: str) -> None:
 
 
 def render_evaluation_workspace(lang: str) -> None:
+    scope_labels = {
+        ("اختبار سهم واحد" if lang == "ar" else "Single security"): "single",
+        ("تقرير القائمة الثابتة" if lang == "ar" else "Fixed-universe report"): "universe",
+    }
+    scope_label = st.segmented_control(
+        "نوع التقييم" if lang == "ar" else "Evaluation scope",
+        options=list(scope_labels),
+        default=list(scope_labels)[0],
+        selection_mode="single",
+        key=f"evaluation_scope_{lang}",
+    )
+    if scope_labels.get(scope_label, "single") == "universe":
+        render_universe_report("data/universe_report.json", lang)
+        st.divider()
+        render_session_log(st.session_state.get("recommendation_log", []), lang)
+        return
+
     render_evaluation_intro(lang)
     st.info(et(lang, "investment_note"), icon="ℹ️")
     with st.container(border=True):
