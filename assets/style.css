@@ -143,6 +143,15 @@ button, input, [role="radiogroup"] { direction: ltr; }
 .snapshot-grid strong { display:block;color:#eef4fb;font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:ltr;text-align:var(--app-align); }
 [data-testid="stPlotlyChart"] { border:1px solid var(--line);border-radius:16px;overflow:hidden; }
 
+.evaluation-intro { border:1px solid var(--line);border-radius:22px;padding:1.4rem 1.5rem;margin:1rem 0;background:radial-gradient(circle at 92% 12%,rgba(34,211,238,.11),transparent 34%),linear-gradient(145deg,rgba(16,25,40,.98),rgba(9,15,26,.98)); }
+.evaluation-intro small { color:var(--teal);font-size:.63rem;font-weight:800;letter-spacing:.13em; }
+.evaluation-intro h2 { color:var(--text);font-size:clamp(1.2rem,3.2vw,1.8rem);margin:.48rem 0; }
+.evaluation-intro p { color:var(--muted);font-size:.8rem;line-height:1.7;margin:0;max-width:850px; }
+[data-testid="stMetric"] { border:1px solid var(--line);background:rgba(13,20,34,.66);border-radius:15px;padding:.85rem 1rem;min-height:105px; }
+[data-testid="stMetricLabel"] { color:var(--muted);font-size:.68rem; }
+[data-testid="stMetricValue"] { color:var(--text);font-weight:800;direction:ltr;text-align:var(--app-align); }
+[data-testid="stDataFrame"] { border:1px solid var(--line);border-radius:14px;overflow:hidden; }
+
 .language-shell { max-width:610px;margin:12vh auto 1.4rem;text-align:center;direction:ltr; }
 .language-shell .brand-mark { margin:0 auto 1.2rem; }
 .language-shell h1 { color:var(--text);font-size:clamp(2rem,7vw,3.3rem);line-height:1.2;margin:.6rem 0; }
@@ -190,6 +199,8 @@ button, input, [role="radiogroup"] { direction: ltr; }
   .metric-grid strong { font-size:.79rem; }
   .snapshot-grid { grid-template-columns:repeat(2,1fr); }
   [data-testid="stHorizontalBlock"] { gap:.55rem; }
+  .evaluation-intro { padding:1.1rem;margin-top:.75rem; }
+  [data-testid="stMetric"] { min-height:92px;padding:.7rem; }
 }
 
 @media (max-width: 420px) {
