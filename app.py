@@ -41,6 +41,10 @@ st.set_page_config(
 
 
 def set_language(lang: str) -> None:
+    if st.session_state.get("lang") != lang:
+        st.session_state.pop("analysis_result", None)
+        st.session_state.pop("analysis_history", None)
+        st.session_state.pop("analysis_error", None)
     st.session_state.lang = lang
     st.session_state.language_ready = True
     st.query_params["lang"] = lang
