@@ -382,7 +382,7 @@ def render_footer(lang: str) -> None:
     st.markdown(
         f"""
         <footer class="app-footer">
-          <div><strong>Stock Decision Pro</strong><span>V1.0</span></div>
+          <div><strong>Stock Decision Pro</strong><span>V1.1</span></div>
           <p>{escape(t(lang, 'footer_disclaimer'))}</p>
           <small>{escape(t(lang, 'source_note'))}</small>
         </footer>
