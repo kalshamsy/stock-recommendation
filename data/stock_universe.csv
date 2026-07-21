@@ -1,0 +1,150 @@
+symbol,name,exchange,type
+A,Agilent Technologies,NYSE,EQUITY
+AA,Alcoa Corporation,NYSE,EQUITY
+AAL,American Airlines Group,NASDAQ,EQUITY
+AAP,Advance Auto Parts,NYSE,EQUITY
+AAPL,Apple Inc.,NASDAQ,EQUITY
+ABBV,AbbVie Inc.,NYSE,EQUITY
+ABNB,Airbnb Inc.,NASDAQ,EQUITY
+ABT,Abbott Laboratories,NYSE,EQUITY
+ACGL,Arch Capital Group,NASDAQ,EQUITY
+ACN,Accenture plc,NYSE,EQUITY
+ADBE,Adobe Inc.,NASDAQ,EQUITY
+ADI,Analog Devices,NASDAQ,EQUITY
+ADM,Archer-Daniels-Midland,NYSE,EQUITY
+ADP,Automatic Data Processing,NASDAQ,EQUITY
+ADSK,Autodesk Inc.,NASDAQ,EQUITY
+AEP,American Electric Power,NASDAQ,EQUITY
+AIG,American International Group,NYSE,EQUITY
+AMAT,Applied Materials,NASDAQ,EQUITY
+AMD,Advanced Micro Devices,NASDAQ,EQUITY
+AMGN,Amgen Inc.,NASDAQ,EQUITY
+AMT,American Tower Corporation,NYSE,EQUITY
+AMZN,Amazon.com Inc.,NASDAQ,EQUITY
+ANET,Arista Networks,NYSE,EQUITY
+ARM,Arm Holdings,NASDAQ,EQUITY
+ASML,ASML Holding,NASDAQ,EQUITY
+AVGO,Broadcom Inc.,NASDAQ,EQUITY
+AXP,American Express,NYSE,EQUITY
+BA,The Boeing Company,NYSE,EQUITY
+BABA,Alibaba Group Holding,NYSE,EQUITY
+BAC,Bank of America,NYSE,EQUITY
+BKNG,Booking Holdings,NASDAQ,EQUITY
+BLK,BlackRock Inc.,NYSE,EQUITY
+BMY,Bristol-Myers Squibb,NYSE,EQUITY
+BRK-B,Berkshire Hathaway Class B,NYSE,EQUITY
+BSX,Boston Scientific,NYSE,EQUITY
+BX,Blackstone Inc.,NYSE,EQUITY
+C,Citigroup Inc.,NYSE,EQUITY
+CAT,Caterpillar Inc.,NYSE,EQUITY
+CCL,Carnival Corporation,NYSE,EQUITY
+CDNS,Cadence Design Systems,NASDAQ,EQUITY
+CEG,Constellation Energy,NASDAQ,EQUITY
+CMCSA,Comcast Corporation,NASDAQ,EQUITY
+CME,CME Group,NASDAQ,EQUITY
+COF,Capital One Financial,NYSE,EQUITY
+COIN,Coinbase Global,NASDAQ,EQUITY
+COST,Costco Wholesale,NASDAQ,EQUITY
+CRM,Salesforce Inc.,NYSE,EQUITY
+CRWD,CrowdStrike Holdings,NASDAQ,EQUITY
+CSCO,Cisco Systems,NASDAQ,EQUITY
+CVS,CVS Health,NYSE,EQUITY
+CVX,Chevron Corporation,NYSE,EQUITY
+DASH,DoorDash Inc.,NASDAQ,EQUITY
+DDOG,Datadog Inc.,NASDAQ,EQUITY
+DE,Deere & Company,NYSE,EQUITY
+DELL,Dell Technologies,NYSE,EQUITY
+DIS,The Walt Disney Company,NYSE,EQUITY
+DKNG,DraftKings Inc.,NASDAQ,EQUITY
+DUK,Duke Energy,NYSE,EQUITY
+ELF,e.l.f. Beauty,NYSE,EQUITY
+ETN,Eaton Corporation,NYSE,EQUITY
+F,Ford Motor Company,NYSE,EQUITY
+FCX,Freeport-McMoRan,NYSE,EQUITY
+FDX,FedEx Corporation,NYSE,EQUITY
+GE,GE Aerospace,NYSE,EQUITY
+GILD,Gilead Sciences,NASDAQ,EQUITY
+GM,General Motors,NYSE,EQUITY
+GOOG,Alphabet Class C,NASDAQ,EQUITY
+GOOGL,Alphabet Class A,NASDAQ,EQUITY
+GS,Goldman Sachs,NYSE,EQUITY
+HD,The Home Depot,NYSE,EQUITY
+HOOD,Robinhood Markets,NASDAQ,EQUITY
+HON,Honeywell International,NASDAQ,EQUITY
+IBM,International Business Machines,NYSE,EQUITY
+INTC,Intel Corporation,NASDAQ,EQUITY
+INTU,Intuit Inc.,NASDAQ,EQUITY
+ISRG,Intuitive Surgical,NASDAQ,EQUITY
+JNJ,Johnson & Johnson,NYSE,EQUITY
+JPM,JPMorgan Chase,NYSE,EQUITY
+KO,The Coca-Cola Company,NYSE,EQUITY
+LIN,Linde plc,NASDAQ,EQUITY
+LLY,Eli Lilly and Company,NYSE,EQUITY
+LMT,Lockheed Martin,NYSE,EQUITY
+LOW,Lowe's Companies,NYSE,EQUITY
+LRCX,Lam Research,NASDAQ,EQUITY
+MA,Mastercard Incorporated,NYSE,EQUITY
+MAR,Marriott International,NASDAQ,EQUITY
+MCD,McDonald's Corporation,NYSE,EQUITY
+MELI,MercadoLibre,NASDAQ,EQUITY
+META,Meta Platforms,NASDAQ,EQUITY
+MMM,3M Company,NYSE,EQUITY
+MRK,Merck & Co.,NYSE,EQUITY
+MSTR,Strategy Inc.,NASDAQ,EQUITY
+MS, Morgan Stanley,NYSE,EQUITY
+MSFT,Microsoft Corporation,NASDAQ,EQUITY
+MU,Micron Technology,NASDAQ,EQUITY
+NFLX,Netflix Inc.,NASDAQ,EQUITY
+NKE,NIKE Inc.,NYSE,EQUITY
+NOW,ServiceNow,NYSE,EQUITY
+NVDA,NVIDIA Corporation,NASDAQ,EQUITY
+ORCL,Oracle Corporation,NYSE,EQUITY
+PANW,Palo Alto Networks,NASDAQ,EQUITY
+PEP,PepsiCo Inc.,NASDAQ,EQUITY
+PFE,Pfizer Inc.,NYSE,EQUITY
+PG,Procter & Gamble,NYSE,EQUITY
+PLTR,Palantir Technologies,NASDAQ,EQUITY
+PYPL,PayPal Holdings,NASDAQ,EQUITY
+QCOM,QUALCOMM Incorporated,NASDAQ,EQUITY
+RDDT,Reddit Inc.,NYSE,EQUITY
+RIVN,Rivian Automotive,NASDAQ,EQUITY
+ROKU,Roku Inc.,NASDAQ,EQUITY
+SBUX,Starbucks Corporation,NASDAQ,EQUITY
+SCHW,Charles Schwab,NYSE,EQUITY
+SHOP,Shopify Inc.,NASDAQ,EQUITY
+SMCI,Super Micro Computer,NASDAQ,EQUITY
+SNOW,Snowflake Inc.,NYSE,EQUITY
+SOFI,SoFi Technologies,NASDAQ,EQUITY
+SPGI,S&P Global,NYSE,EQUITY
+T,AT&T Inc.,NYSE,EQUITY
+TGT,Target Corporation,NYSE,EQUITY
+TM,Toyota Motor Corporation,NYSE,EQUITY
+TMUS,T-Mobile US,NASDAQ,EQUITY
+TSLA,Tesla Inc.,NASDAQ,EQUITY
+TSM,Taiwan Semiconductor Manufacturing,NYSE,EQUITY
+UBER,Uber Technologies,NYSE,EQUITY
+UNH,UnitedHealth Group,NYSE,EQUITY
+UPS,United Parcel Service,NYSE,EQUITY
+V,Visa Inc.,NYSE,EQUITY
+VZ,Verizon Communications,NYSE,EQUITY
+WFC,Wells Fargo,NYSE,EQUITY
+WMT,Walmart Inc.,NASDAQ,EQUITY
+XOM,Exxon Mobil Corporation,NYSE,EQUITY
+ZM,Zoom Communications,NASDAQ,EQUITY
+SPY,SPDR S&P 500 ETF Trust,NYSEARCA,ETF
+QQQ,Invesco QQQ Trust,NASDAQ,ETF
+IWM,iShares Russell 2000 ETF,NYSEARCA,ETF
+DIA,SPDR Dow Jones Industrial Average ETF,NYSEARCA,ETF
+VTI,Vanguard Total Stock Market ETF,NYSEARCA,ETF
+VOO,Vanguard S&P 500 ETF,NYSEARCA,ETF
+XLK,Technology Select Sector SPDR Fund,NYSEARCA,ETF
+XLF,Financial Select Sector SPDR Fund,NYSEARCA,ETF
+XLE,Energy Select Sector SPDR Fund,NYSEARCA,ETF
+XLV,Health Care Select Sector SPDR Fund,NYSEARCA,ETF
+XLY,Consumer Discretionary Select Sector SPDR Fund,NYSEARCA,ETF
+XLP,Consumer Staples Select Sector SPDR Fund,NYSEARCA,ETF
+XLI,Industrial Select Sector SPDR Fund,NYSEARCA,ETF
+XLB,Materials Select Sector SPDR Fund,NYSEARCA,ETF
+XLU,Utilities Select Sector SPDR Fund,NYSEARCA,ETF
+XLRE,Real Estate Select Sector SPDR Fund,NYSEARCA,ETF
+XLC,Communication Services Select Sector SPDR Fund,NYSEARCA,ETF
