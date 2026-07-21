@@ -1,42 +1,22 @@
-# Stock Decision MVP
+# StockDecision Pro
 
-نسخة أولية لتقييم الأسهم حسب نوع العملية:
+Professional Streamlit MVP for quick stock decisions with optional detailed analysis.
 
-- استثمار
-- مضاربة قصيرة بهدف 3–5%
+## Features
+- Quick decision first: enter / wait / no entry
+- Swing trading and investment engines
+- Entry zone, stop loss, targets
+- Optional detail panels
+- Candlestick chart with EMA20, SMA50, SMA200
+- Responsive mobile interface
 
-## التشغيل
-
+## Run
 ```bash
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-ثم افتح الرابط الذي يظهر في الطرفية، غالبًا:
+## Deployment
+Main file path in Streamlit Community Cloud: `app.py`
 
-```text
-http://localhost:8501
-```
-
-## ما يحتويه الإصدار
-
-- إدخال رمز السهم
-- بيانات فعلية عبر yfinance أو بيانات تجريبية
-- محرك تقييم مستقل للاستثمار والمضاربة
-- درجة من 100
-- قرار مفسر
-- منطقة دخول، وقف خسارة، وأهداف
-- رسم سعري ومؤشرات أساسية
-- JSON جاهز للتحويل لاحقًا إلى API
-
-## ملاحظات مهمة
-
-هذا مشروع MVP تعليمي. قبل إطلاقه تجاريًا يجب:
-
-1. ربط مزود بيانات مرخص وموثوق.
-2. إضافة تسجيل مستخدمين وقاعدة بيانات.
-3. إضافة اختبارات تاريخية شاملة.
-4. مراجعة المتطلبات القانونية والتنظيمية.
-5. عدم عرض النتائج كضمان للربح أو استشارة مالية شخصية.
+> Educational prototype only. Not financial advice.
