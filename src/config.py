@@ -1,7 +1,7 @@
 """Shared configuration for the first professional release."""
 
 APP_NAME = "Stock Decision Pro"
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.1.0"
 
 SWING_SCORE_WEIGHTS = {
     "trend": 25,
