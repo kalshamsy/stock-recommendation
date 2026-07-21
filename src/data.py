@@ -201,3 +201,59 @@ def load_market_bundle(symbol: str) -> dict[str, Any]:
         "calendar": calendar,
         "retrieved_at": datetime.now(timezone.utc).isoformat(),
     }
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_backtest_bundle(symbol: str, period: str = "5y") -> dict[str, Any]:
+    """Fetch adjusted daily history for conservative point-in-time testing."""
+    clean_symbol = (symbol or "").strip().upper()
+    allowed_periods = {"2y", "5y", "10y"}
+    clean_period = period if period in allowed_periods else "5y"
+    if not clean_symbol or len(clean_symbol) > 20:
+        raise ValueError("Invalid symbol")
+
+    ticker = yf.Ticker(clean_symbol)
+    try:
+        history = _clean_history(
+            ticker.history(period=clean_period, interval="1d", auto_adjust=True, timeout=20)
+        )
+    except Exception as exc:
+        raise RuntimeError(f"Unable to load backtest history for {clean_symbol}") from exc
+    if history.empty:
+        raise RuntimeError(f"No backtest history returned for {clean_symbol}")
+
+    info = _safe_info(ticker)
+    benchmark = pd.DataFrame()
+    try:
+        benchmark = _clean_history(
+            yf.Ticker("SPY").history(period=clean_period, interval="1d", auto_adjust=True, timeout=15)
+        )
+    except Exception:
+        pass
+
+    sector_history = pd.DataFrame()
+    sector_etf = SECTOR_ETFS.get(str(info.get("sector") or ""))
+    if sector_etf:
+        try:
+            sector_history = _clean_history(
+                yf.Ticker(sector_etf).history(
+                    period=clean_period,
+                    interval="1d",
+                    auto_adjust=True,
+                    timeout=15,
+                )
+            )
+        except Exception:
+            pass
+
+    return {
+        "symbol": clean_symbol,
+        "history": history,
+        "benchmark": benchmark,
+        "sector_history": sector_history,
+        "sector_etf": sector_etf,
+        "info": info,
+        "fast_info": {"currency": info.get("currency") or "USD"},
+        "calendar": {},
+        "retrieved_at": datetime.now(timezone.utc).isoformat(),
+    }
