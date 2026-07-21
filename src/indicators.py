@@ -21,6 +21,20 @@ def compute_indicators(history: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame()
 
     df = history.copy()
+    calculated_columns = {
+        "EMA20",
+        "SMA50",
+        "SMA200",
+        "RSI14",
+        "MACD",
+        "MACD_SIGNAL",
+        "ATR14",
+        "VOLUME_AVG20",
+        "DOLLAR_VOLUME_AVG20",
+        "RETURN_1D",
+    }
+    if calculated_columns.issubset(df.columns):
+        return df
     close = _series(df, "Close")
     high = _series(df, "High")
     low = _series(df, "Low")
